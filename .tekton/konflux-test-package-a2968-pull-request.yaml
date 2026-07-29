@@ -18,6 +18,13 @@ metadata:
   namespace: mshaposh-tenant
 spec:
    params:
+    - name: build-platforms
+      value:
+        - linux/arm64
+        - linux/ppc64le
+        - linux/s390x
+        - linux/amd64
+        - linux/riscv64
     - name: ociStorage
       value: quay.io/redhat-user-workloads-stage/mshaposh-tenant/konflux-test-package-a2968:on-pr-{{ pull_request_number }}-{{revision}}
     - name: package-name
