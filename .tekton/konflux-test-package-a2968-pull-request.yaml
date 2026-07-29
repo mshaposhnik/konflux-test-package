@@ -20,6 +20,7 @@ spec:
    params:
     - name: build-platforms
       value:
+        - localhost
         - linux/arm64
         - linux/ppc64le
         - linux/s390x
